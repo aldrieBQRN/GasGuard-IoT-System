@@ -4,22 +4,22 @@
 
 ## Features
 
-* [cite_start]**Real-Time Monitoring:** Continuous tracking of gas concentration levels and raw sensor data[cite: 46].
+* **Real-Time Monitoring:** Continuous tracking of gas concentration levels and raw sensor data[cite: 46].
 * **Web Dashboard:** A responsive interface (built with Bootstrap 5) displaying:
-    * [cite_start]Gas Concentration (%) & Raw Sensor Values[cite: 58].
-    * [cite_start]System Status (Safe, Critical, Offline)[cite: 60].
-    * [cite_start]Sensor Health (Voltage) & WiFi Signal Strength[cite: 47, 48].
+    * Gas Concentration (%) & Raw Sensor Values[cite: 58].
+    * System Status (Safe, Critical, Offline)[cite: 60].
+    * Sensor Health (Voltage) & WiFi Signal Strength[cite: 47, 48].
 * **Immediate Alerts:**
-    * [cite_start]**Local:** Loud buzzer and Red LED activation on the device when thresholds (Raw > 2000) are breached[cite: 36, 61].
+    * **Local:** Loud buzzer and Red LED activation on the device when thresholds (Raw > 2000) are breached[cite: 36, 61].
     * **Remote:** Automated email alerts sent via PHPMailer when "DANGER" status is detected.
     * **Browser:** Audio siren simulation on the dashboard during critical states.
-* [cite_start]**Connectivity:** Uses WiFi and HTTPS to securely transmit data to a central server[cite: 35, 52].
+* **Connectivity:** Uses WiFi and HTTPS to securely transmit data to a central server[cite: 35, 52].
 
 ## Hardware Requirements
 
 * **Microcontroller:** ESP32 Development Board
 * **Sensor:** MQ-2 Gas/Smoke Sensor
-* [cite_start]**Display:** 0.96" OLED Display (128x64, I2C) 
+* **Display:** 0.96" OLED Display (128x64, I2C) 
 * **Indicators:**
     * Red LED (Danger)
     * Green LED (Safe)
@@ -30,10 +30,10 @@
 
 | Component | Pin Type | ESP32 Pin |
 | :--- | :--- | :--- |
-| **MQ-2 Sensor** | Analog | [cite_start]`GPIO 34`  |
-| **Buzzer** | Digital Output | [cite_start]`GPIO 23`  |
-| **Red LED** | Digital Output | [cite_start]`GPIO 15`  |
-| **Green LED** | Digital Output | [cite_start]`GPIO 32`  |
+| **MQ-2 Sensor** | Analog | `GPIO 34`  |
+| **Buzzer** | Digital Output | `GPIO 23`  |
+| **Red LED** | Digital Output | `GPIO 15`  |
+| **Green LED** | Digital Output | `GPIO 32`  |
 | **OLED SDA** | I2C Data | Default (Usually `21`) |
 | **OLED SCL** | I2C Clock | Default (Usually `22`) |
 
